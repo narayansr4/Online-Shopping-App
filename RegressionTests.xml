@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite" parallel= "tests" thread-count="3">
+
+    <listeners>
+        <listener class-name="com.shoppingApp.testComponents.Listeners"/>
+    </listeners>
+
+    <test name="Verify Register User Test">
+        <classes>
+            <class name="com.shoppingApp.testCases.TestCase1_RegisterUser"/>
+        </classes>
+    </test>
+
+    <test name="Verify Login with valid Credentials">
+        <classes>
+            <class name="com.shoppingApp.testCases.TestCase2_LoginWithValidCredentials"/>
+        </classes>
+    </test>
+
+    <test name="Verify Login with Invalid Credentials">
+        <classes>
+            <class name="com.shoppingApp.testCases.TestCase3_LoginWithInvalidCredentials"/>
+        </classes>
+    </test>
+
+    <test name="Verify Adding Multiple Products in Cart Test">
+        <classes>
+            <class name="com.shoppingApp.testCases.TestCase6_AddMultipleProductsToCart"/>
+        </classes>
+    </test>
+
+    <test name="Verify Payment Test">
+        <classes>
+            <class name="com.shoppingApp.testCases.TestCase8_VerifyPayment"/>
+        </classes>
+    </test>
+</suite>
